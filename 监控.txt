@@ -1,27 +1,5 @@
 
-0426
-# ¹¤ºÅÓòÃÜÂë
-xn043275   paopao@@0723
-xn067284   Jiangting006
-
-#ip
-10.10.17.141
-
-# teamviewer
-793659120 		123456
-
--- »¢·ûµ÷¶È
-https://hufu-explorer.niudingfeng.com/#/group/list
--- »¢·ûgitlab
-https://gitlab.niudingfeng.com/hufu
--- ide
-https://ide-explorer.niudingfeng.com/
--- µ÷¶ÈÏµÍ³
-https://scheduler-explorer.niudingfeng.com/portal/index/index.do
-
-
-
--- ²é¿´Ãûµ¥·ÖÅäÊÇ·ñ¾ùÔÈ
+-- æŸ¥çœ‹åå•åˆ†é…æ˜¯å¦å‡åŒ€
 (
 select   t.type_id
         ,t.type_name
@@ -55,46 +33,46 @@ order by cast(t.type_id as signed) asc;
 
 )
 
-# Ãûµ¥ÀàĞÍ 10 ÖÖ
+# åå•ç±»å‹ 10 ç§
 (
--- 1  ×¢²á72Ğ¡Ê±Î´Í¶×Ê     ÅäÖÃ±íÀï¸Ä×øÏ¯, ±ÈÀı      New_Flag    
-USP_ETL_Rpt_TM_Call_List_NEW                                            ÓĞÅÅ³ı×î½üÒ»¸öÔÂµÄ
+-- 1  æ³¨å†Œ72å°æ—¶æœªæŠ•èµ„     é…ç½®è¡¨é‡Œæ”¹åå¸­, æ¯”ä¾‹      New_Flag    
+USP_ETL_Rpt_TM_Call_List_NEW                                            æœ‰æ’é™¤æœ€è¿‘ä¸€ä¸ªæœˆçš„
 USP_ETL_Rpt_TM_Call_List_Distribute(${START_DATE},1) 
 
--- 2  ¶¨ÆÚµ½ÆÚ             Ó¢ÎÄ¸üĞÂ×øÏ¯    µ÷ÓÃ¸Ä±ÈÀı         
-USP_ETL_Rpt_TM_Call_List_FixedDue                                       ÓĞÅÅ³ı×î½üÒ»¸öÔÂµÄ     1  
+-- 2  å®šæœŸåˆ°æœŸ             è‹±æ–‡æ›´æ–°åå¸­    è°ƒç”¨æ”¹æ¯”ä¾‹         
+USP_ETL_Rpt_TM_Call_List_FixedDue                                       æœ‰æ’é™¤æœ€è¿‘ä¸€ä¸ªæœˆçš„     1  
 USP_ETL_Rpt_TM_Call_List_Distribute_FixedDue(${START_DATE},2,0.0526)
 
--- 4  ×Ê½ğÕ¾¸Ú             Ó¢ÎÄ¸üĞÂ×øÏ¯    µ÷ÓÃ¸Ä±ÈÀı          
-USP_ETL_Rpt_TM_Call_List_Balance                                        ÓĞÅÅ³ı×î½üÒ»¸öÔÂµÄ        1
+-- 4  èµ„é‡‘ç«™å²—             è‹±æ–‡æ›´æ–°åå¸­    è°ƒç”¨æ”¹æ¯”ä¾‹          
+USP_ETL_Rpt_TM_Call_List_Balance                                        æœ‰æ’é™¤æœ€è¿‘ä¸€ä¸ªæœˆçš„        1
 USP_ETL_Rpt_TM_Call_List_Distribute_Balance(4,0.0526)
 
--- 5  ³ÁÄ¬ÓÃ»§»½ĞÑ         ÅäÖÃ±íÀï¸Ä×øÏ¯  µ÷ÓÃ¸Ä±ÈÀı      Silence_Flag     
-USP_ETL_Rpt_TM_Call_List_Silence_1 2 3                                  ÓĞÅÅ³ı×î½üÒ»¸öÔÂµÄ      1
+-- 5  æ²‰é»˜ç”¨æˆ·å”¤é†’         é…ç½®è¡¨é‡Œæ”¹åå¸­  è°ƒç”¨æ”¹æ¯”ä¾‹      Silence_Flag     
+USP_ETL_Rpt_TM_Call_List_Silence_1 2 3                                  æœ‰æ’é™¤æœ€è¿‘ä¸€ä¸ªæœˆçš„      1
 USP_ETL_Rpt_TM_Call_List_Distribute_Silence_1 2 3(${START_DATE},0.0263)
 
--- 6  ĞÂÊÖ±êÊ¹ÓÃÌáĞÑ       ÅäÖÃ±íÀï¸Ä×øÏ¯  µ÷ÓÃ¸Ä±ÈÀı      Novice_Flag   
-USP_ETL_Rpt_TM_Call_List_Novice                                         ÓĞÅÅ³ı×î½üÒ»¸öÔÂµÄ   1
+-- 6  æ–°æ‰‹æ ‡ä½¿ç”¨æé†’       é…ç½®è¡¨é‡Œæ”¹åå¸­  è°ƒç”¨æ”¹æ¯”ä¾‹      Novice_Flag   
+USP_ETL_Rpt_TM_Call_List_Novice                                         æœ‰æ’é™¤æœ€è¿‘ä¸€ä¸ªæœˆçš„   1
 USP_ETL_Rpt_TM_Call_List_Distribute_Novice(${START_DATE},0.0667)
 
--- 7  ´ıÊÕ½ğ¶îÍÚ¾ò         ÅäÖÃ±íÀï¸Ä×øÏ¯  µ÷ÓÃ¸Ä±ÈÀı      Other_Flag     
-USP_ETL_Rpt_TM_Call_List_Worth                                          ÓĞÅÅ³ı×î½üÒ»¸öÔÂµÄ  1
+-- 7  å¾…æ”¶é‡‘é¢æŒ–æ˜         é…ç½®è¡¨é‡Œæ”¹åå¸­  è°ƒç”¨æ”¹æ¯”ä¾‹      Other_Flag     
+USP_ETL_Rpt_TM_Call_List_Worth                                          æœ‰æ’é™¤æœ€è¿‘ä¸€ä¸ªæœˆçš„  1
 USP_ETL_Rpt_TM_Call_List_Distribute_Other(${START_DATE},7,0,0,0.0263)  
 
--- 8  ×¢²áµ±ÈÕÎ´Í¶×ÊÓÃ»§   ÅäÖÃ±íÀï¸Ä×øÏ¯  µ÷ÓÃ¸Ä±ÈÀı      RealName_Flag 
+-- 8  æ³¨å†Œå½“æ—¥æœªæŠ•èµ„ç”¨æˆ·   é…ç½®è¡¨é‡Œæ”¹åå¸­  è°ƒç”¨æ”¹æ¯”ä¾‹      RealName_Flag 
 USP_ETL_Loading_Rpt_TM_Call_List_Temp 
 USP_ETL_Rpt_TM_Call_List_RealName 
 USP_ETL_Rpt_TM_Call_List_Distribute_RealName(${Run_Date},0.125)
      
--- 10 µ±ÌìÉúÈÕÓÃ»§         ÅäÖÃ±íÀï¸Ä×øÏ¯  µ÷ÓÃ¸Ä±ÈÀı      Birthday_Flag   
-USP_ETL_Rpt_TM_Call_List_Birthday                                       ÓĞÅÅ³ı×î½üÒ»¸öÔÂµÄ  1
+-- 10 å½“å¤©ç”Ÿæ—¥ç”¨æˆ·         é…ç½®è¡¨é‡Œæ”¹åå¸­  è°ƒç”¨æ”¹æ¯”ä¾‹      Birthday_Flag   
+USP_ETL_Rpt_TM_Call_List_Birthday                                       æœ‰æ’é™¤æœ€è¿‘ä¸€ä¸ªæœˆçš„  1
 USP_ETL_Rpt_TM_Call_List_Distribute_Birthday(0.0263)
 
--- 13 »îÆÚÊê»ØÓÃ»§         ÅäÖÃ±íÀï¸Ä×øÏ¯  µ÷ÓÃ¸Ä±ÈÀı      Current_Ransom_Flag         
-USP_ETL_Rpt_TM_Call_List_Current_Ransom                                 ÓĞÅÅ³ı×î½üÒ»¸öÔÂµÄ  1
+-- 13 æ´»æœŸèµå›ç”¨æˆ·         é…ç½®è¡¨é‡Œæ”¹åå¸­  è°ƒç”¨æ”¹æ¯”ä¾‹      Current_Ransom_Flag         
+USP_ETL_Rpt_TM_Call_List_Current_Ransom                                 æœ‰æ’é™¤æœ€è¿‘ä¸€ä¸ªæœˆçš„  1
 USP_ETL_Rpt_TM_Call_List_Distribute_Current_Ransom(13,0.027)
 
--- 14 ×¢²áµ±ÈÕÍ¶×ÊÓÃ»§     ÅäÖÃ±íÀï¸Ä×øÏ¯  µ÷ÓÃ¸Ä±ÈÀı      Invest_Flag  
+-- 14 æ³¨å†Œå½“æ—¥æŠ•èµ„ç”¨æˆ·     é…ç½®è¡¨é‡Œæ”¹åå¸­  è°ƒç”¨æ”¹æ¯”ä¾‹      Invest_Flag  
 USP_ETL_Loading_Rpt_TM_Call_List_Invest                                     
 USP_ETL_Rpt_TM_Call_List_Invest
 USP_ETL_Rpt_TM_Call_List_Distribute_Invest(${Run_Date},0.125)
